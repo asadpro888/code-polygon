@@ -77,3 +77,15 @@ const ComponentsWithUseState = () => {
 
 export default ComponentsWithUseState
 
+////////////////////////////////////////////////
+import { useState } from 'react'
+const UseContext = () => {
+    const [count, setCount] = useState(0)
+  return (
+    <div>
+          <h1>{ count}</h1>
+          <button onClick={() => setCount(count + 1)}>Add</button>
+          <button onClick={()=> setCount(count - 1)}>sub</button>
+    </div>
+  )
+}
