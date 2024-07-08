@@ -87,5 +87,9 @@ const UseContext = () => {
           <button onClick={() => setCount(count + 1)}>Add</button>
           <button onClick={()=> setCount(count - 1)}>sub</button>
     </div>
-  )
+  )////////////////////////////////////////////
+   <script>
+        gsap.to(".box", {opacity: 0, duration: 4, y: -50, x: -100, ease: 'elastic(1, 0.3)', delay:1.1})
+        gsap.from(".box1", { opacity: 0, duration: 1, y: -50, x: -100, delay: 1.4, stagger: 0.6 })
+    </script>
 }
