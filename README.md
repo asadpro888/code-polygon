@@ -91,5 +91,13 @@ const UseContext = () => {
    <script>
         gsap.to(".box", {opacity: 0, duration: 4, y: -50, x: -100, ease: 'elastic(1, 0.3)', delay:1.1})
         gsap.from(".box1", { opacity: 0, duration: 1, y: -50, x: -100, delay: 1.4, stagger: 0.6 })
+     // //////animation with gsap
+      const myText = new SplitType('#my-text')
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay:0.2,
+            duration: 1,
+        })
     </script>
 }
