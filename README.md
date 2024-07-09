@@ -105,4 +105,9 @@ const UseContext = () => {
        TweenMax.staggerTo('.img', 1, {y:100}, 0.2);
         
     </script>
+    //routing lesson//
+
+    import { BrowserRouter } from 'react-router-dom';
+
+    /////routing lesson/////
 }
