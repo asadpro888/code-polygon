@@ -100,4 +100,9 @@ const UseContext = () => {
             duration: 1,
         })
     </script>
+    /////////////////////////////////////////////
+    <script>
+       TweenMax.staggerTo('.img', 1, {y:100}, 0.2);
+        
+    </script>
 }
