@@ -128,4 +128,20 @@ const findStudent = (allStudents, studentName) => {
 
 findStudent(studentDatabase, "erick");
 console.log(findStudent);
+-----------------------------------------------
+const groceries = ['milk', 'bread', 'eggs', 'flour', 'choose', 'sugar'];
+
+const searchForItem = (item) => {
+    for (let i = 0; i < groceries.length; i++){
+        if (groceries[i] === item) { 
+            console.log(`Found: ${item}`);
+        }
+    }
+ for (let j = 0; j < groceries.length; j++){
+        if (groceries[j] === item) { 
+            console.log(`Found: ${item} 2`);
+        }
+    }    
+}
+searchForItem('eggs');
 ///////////////////////////
