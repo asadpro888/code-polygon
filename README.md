@@ -198,3 +198,34 @@ c.right = f;
 
 
 // a -> b -> d -> e -> c -> f
+------------------------------------
+let text1 = 'ass';
+let text2 = 'love';
+let text3 = 'hate';
+let text4 = 'forgotten';
+let text5 = ',love';
+let text6 = ',hate';
+let text7 = ',love';
+let text8 = ',hate';
+class Mates{
+    constructor(val) {
+        this.val = val;
+        this.K = text1+text5;
+        this.L = text2+text6;
+        this.M = text3+text7;
+        this.S = text4+text8;
+    }
+}
+
+const a = new Mates('K');
+const b = new Mates('L');
+const c = new Mates('M');
+const d = new Mates('S');
+
+a.K = c;
+b.L = d;
+c.M = a;
+d.S = b;
+
+console.log( new Mates)
+// a -> b -> d -> e -> c -> f
