@@ -160,4 +160,12 @@ function findPairs(arr) {
 
 const numbers = [1, 2, 3, 4, 5];
 findPairs(numbers);
+-------------------------------------------
+for (let a = 0; a < 100; a++){
+    if (a % 3 == 0 && a % 5 == 0) { }
+    else if (a % 3 == 0) { }
+    else if (a % 5 == 0) { }
+    else { }
+    console.log([a]);
+}
 ///////////////////////////
