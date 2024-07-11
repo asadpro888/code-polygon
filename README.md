@@ -168,4 +168,9 @@ for (let a = 0; a < 100; a++){
     else { }
     console.log([a]);
 }
-///////////////////////////
+-----------------------------------------
+const text = 'i am sorry'
+
+for (let a = 1; a < text.length; a++){
+    console.log(text, [a]*100);
+}
