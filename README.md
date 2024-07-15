@@ -326,3 +326,25 @@ function bubbleSort(arr) {
 const myArr = [4, 2, 6, 5, 1, 3];
 const res = bubbleSort(myArr);
 console.log(res);
+--------------------------------------
+function selectionSort(arr) {
+    for (let i = 0; i < arr.lenght; i++){
+        let minIndex = i;
+
+        for (let j = i + 1; j < arr.lenght; j++){
+            if (arr[j] < arr[minIndex]) { 
+                minIndex = j;
+            }
+        }
+        if (i === minIndex) {
+            let temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+        return arr;
+    }
+}
+
+const myArr = [4, 2, 6, 5, 1, 3];
+const res = selectionSort(myArr);
+console.log(res);
