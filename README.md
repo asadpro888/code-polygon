@@ -348,3 +348,25 @@ function selectionSort(arr) {
 const myArr = [4, 2, 6, 5, 1, 3];
 const res = selectionSort(myArr);
 console.log(res);
+------------------------------let text1 = 'i'
+let text2 = 'love'
+let text3 = 'you'
+class Text{
+    constructor(value) {
+        this.value = value;
+        this.a = text1;
+        this.b = text2;
+        this.c = text3;
+    } 
+
+}
+
+const a = new Text('fuck you');
+const b = new Text('is dogshit');
+const c = new Text('suck');
+
+a.a = a+a;
+b.b = b+b;
+c.c = c+c;
+
+console.log(a,b,c);
