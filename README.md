@@ -370,3 +370,8 @@ b.b = b+b;
 c.c = c+c;
 
 console.log(a,b,c);
+-----------python----------
+user_input = input("enter something: ")
+print('you entered', user_input)
+
+
