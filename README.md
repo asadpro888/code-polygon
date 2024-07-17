@@ -373,5 +373,25 @@ console.log(a,b,c);
 -----------python----------
 user_input = input("enter something: ")
 print('you entered', user_input)
+----------------------------------
+const person = {
+    name: 'John',
+    age: 30,
+    greet: function () {
+        console.log('Hi, I am ' + this.name + ' and I am ' + this)
+
+    }
+}
+const person2 = {
+    name: 'Jane',
+    age: 30,
+    greet: function () {
+        console.log('Hi, I am ' + this.name + ' and I am ' + this
+        )
+    }
+}
+
+console.log(person.age)
+person.greet()
 
 
