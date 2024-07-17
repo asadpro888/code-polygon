@@ -394,4 +394,13 @@ const person2 = {
 console.log(person.age)
 person.greet()
 
+-----way to ask "i am sorry" by javascript----
+function MyFavoriteKdrams() {
+    for (let i = 1; i < 100; i++){
+        let i = 'i am sorry'
+        console.log([i]);
+    }
+}
+
+MyFavoriteKdrams()
 
