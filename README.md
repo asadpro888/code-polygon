@@ -404,3 +404,20 @@ function MyFavoriteKdrams() {
 
 MyFavoriteKdrams()
 
+--------------d3.js--------------------------
+d3.select();
+d3.selectAll();
+
+d3.select('h1').style('color', 'red')
+d3.select('h1').style('font-size', '50px')
+    .attr('class', 'heading')
+    .text('something');
+
+d3.select('body').append('p').text('first paragrah')
+    d3.select('body').append('p').text('first paragrah')    
+    d3.select('body').append('p').text('first paragrah')
+d3.select('body').append('p').text('first paragrah')
+    
+d3.selectAll('p').style('color', 'blue')
+
+
