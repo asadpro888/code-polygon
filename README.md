@@ -466,4 +466,5 @@ print(len('asadprox'))
 ---------------------------------------
 text = 'python'
 first_char = text[4]
+substring = text[1:2]
 print(first_char)
