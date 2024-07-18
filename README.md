@@ -457,3 +457,7 @@ let barChart = svg.selectAll('rect')
         return 'translate(' + translate + ')';
     })
 
+------------string length in py---------
+string_len = 'python'
+my_lenght = len(string_len)
+print(my_lenght)
