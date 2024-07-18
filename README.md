@@ -468,3 +468,9 @@ text = 'python'
 first_char = text[4]
 substring = text[1:2]
 print(first_char)
+---------string formatting------
+name = 'asad'
+age = 16
+
+formatted_string = f'my name is {name} i am {age} years old'
+print(formatted_string)
