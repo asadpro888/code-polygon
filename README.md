@@ -461,3 +461,5 @@ let barChart = svg.selectAll('rect')
 string_len = 'python'
 my_lenght = len(string_len)
 print(my_lenght)
+
+print(len('asadprox'))
