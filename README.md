@@ -474,3 +474,15 @@ age = 16
 
 formatted_string = f'my name is {name} i am {age} years old'
 print(formatted_string)
+-----bg alterer whenever mouse enter------
+ let list = document.querySelectorAll('.sci li');
+        let bg  = document.querySelector('body')
+        list.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                let color = event.target.style.getPropertyValue('--clr');
+                bg.style.backgroundColor = color;
+            })
+            element.addEventListener('mouseleave', () => {
+                bg.style.backgroundColor = '#fff';
+            })
+        })
