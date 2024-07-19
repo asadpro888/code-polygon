@@ -475,7 +475,29 @@ age = 16
 formatted_string = f'my name is {name} i am {age} years old'
 print(formatted_string)
 -----bg alterer whenever mouse enter------
- let list = document.querySelectorAll('.sci li');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <ul class="sci">
+        <li style="--clr:#ff0000"><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+         <li style="--clr:#333333"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li style="--clr:#00a783"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+		max: 25,
+		speed: 400,
+        glare: true
+	});
+        let list = document.querySelectorAll('.sci li');
         let bg  = document.querySelector('body')
         list.forEach(element => {
             element.addEventListener('mouseenter', () => {
@@ -486,3 +508,62 @@ print(formatted_string)
                 bg.style.backgroundColor = '#fff';
             })
         })
+    </script>
+</body>
+</html>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.sci{
+    position: relative;
+    display: flex;  
+    gap: 30px;
+}
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    color: #333;
+    font-size: 4rem;
+    text-decoration: none;
+    box-shadow: 0 25px 35px ;
+    transform-style: preserve-3d;
+    transition: background 0.25s;
+}
+
+.sci li a:hover{
+    background: var(--clr);
+    box-shadow: 0 25px 35px rgba(0,0,0,0.25);
+    border: 5px solid var(--clr)
+}
+
+.sci li a i{
+    transition: 0.5s;
+    pointer-events: none;
+}
+.sci li a:hover i{
+    transform: scale(1.5) translateZ(50px);
+    color: #fff;
+}
+
+
