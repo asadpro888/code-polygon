@@ -587,4 +587,9 @@ document.addEventListener('mousemove', (evt) => {
   }
    text.style.textShadow = newShadow;
 })
+-------------materialize icons----------------
+ <i class="material-icons red-text">warning</i>
+     <i class="material-icons black-text">search</i>
+     <i class="material-icons black-text">cloud</i>
+     <i class="material-icons black-text">desktop</i>
 
