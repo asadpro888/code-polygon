@@ -592,4 +592,36 @@ document.addEventListener('mousemove', (evt) => {
      <i class="material-icons black-text">search</i>
      <i class="material-icons black-text">cloud</i>
      <i class="material-icons black-text">desktop</i>
+--------------python quiz game----------------------
+print("welcome to my computer quiz!")
+
+playing = input('Do you want to play? ')
+
+if playing != "yes":
+    quit()
+print("okay! Let's play: )")
+
+answer = input("what does CPU stand for? ")
+if answer == "central processing unit":
+    print("correct! ")
+else: 
+    print('incorrect')
+
+    answer = input("what does NATO stand for? ")
+if answer == "NORTH ATLANTIC TREATY ORGANIZATION":
+    print("correct! ")
+else:
+    print("incorrect")
+
+answer = input("what does sco stand for? ")
+if answer == "shanhai treaty organization":
+    print("correct! ")
+else:
+    print("incorrect")
+
+answer = input("what does Brics stand for? ")
+if answer == "Brazil, Russia, India, China, South Africa":
+    print("correct! ")
+else:
+    print("incorrect")
 
