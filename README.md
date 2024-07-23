@@ -624,4 +624,38 @@ if answer == "Brazil, Russia, India, China, South Africa":
     print("correct! ")
 else:
     print("incorrect")
+-------------------drag & drop-----------------
+const draggableElements = document.querySelectorAll('.draggable');
+const dropZone = document.getElementById('right');
+
+// Function to handle the beginning of a drag operation
+function handleDragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.id);
+}
+
+// Function to handle when a draggable element hovers over the drop zone
+function handleDragOver(event) {
+  event.preventDefault(); // Allow dropping
+}
+
+// Function to handle when a draggable element is dropped on the drop zone
+function handleDrop(event) {
+  event.preventDefault(); // Prevent default behavior (like opening the element)
+
+  const droppedElementId = event.dataTransfer.getData('text/plain');
+  const droppedElement = document.getElementById(droppedElementId);
+
+  // Safety check to prevent adding the same element multiple times
+  if (droppedElement !== dropZone && !dropZone.contains(droppedElement)) {
+    dropZone.appendChild(droppedElement);
+  }
+}
+
+// Attach event listeners
+draggableElements.forEach(element => {
+  element.addEventListener('dragstart', handleDragStart);
+});
+
+dropZone.addEventListener('dragover', handleDragOver);
+dropZone.addEventListener('drop', handleDrop);
 
