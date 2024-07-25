@@ -658,4 +658,17 @@ draggableElements.forEach(element => {
 
 dropZone.addEventListener('dragover', handleDragOver);
 dropZone.addEventListener('drop', handleDrop);
+--------------------svelte.js---------
+<script>
+    import Nested from "./Nested.svelte";
+    
+     let count = 1;
+     function Handleclick(){
+        count += 1
+     }
+     function ChangeColor(e){
+        document.body.style.backgroundColor = e.target.value;
+     }
+</script>
+<input type="color" on:input={ChangeColor}>
 
