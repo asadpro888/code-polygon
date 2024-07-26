@@ -671,4 +671,51 @@ dropZone.addEventListener('drop', handleDrop);
      }
 </script>
 <input type="color" on:input={ChangeColor}>
+----------------async await-----------
+async function getUserCountry() {
+    const username = document.getElementById('usernameGet').value;
+
+    if (!username) {
+        alert('Please enter a username.');
+        return;
+    }
+
+    try {
+        const response = await fetch(`https://api.github.com/users/${username}`);
+    }
+    catch (error) {
+        alert('Error fetching user data. Please check your internet connection.');
+        return;
+    }
+    
+    const userData = await response.json();
+    const country = userData.location;
+    document.getElementById('countryGet').textContent = `Country: ${country}`;
+    
+    const commitsResponse = await fetch(`https://api.github.com/users/${username}/commits`);
+    const commitsData = await commitsResponse.json();
+    const commitsCount = commitsData.length;
+    document.getElementById('commitsCount').textContent = `Commits: ${commitsCount}`;
+    
+    const repositoriesResponse = await fetch(`https://api.github.com/users/${username}/repos`);
+    const repositoriesData = await repositoriesResponse.json();
+    const repositoriesCount = repositoriesData.length;
+
+    document.getElementById('repositoriesCount').textContent = `Repositories: ${repositoriesCount}`;
+    
+    const followersResponse = await fetch(`https://api.github.com/users/${username}/followers`);
+    const followersData = await followersResponse.json();
+    const followersCount = followersData.length;
+    document.getElementById('followersCount').textContent = `Followers: ${followersCount}`;
+
+    const followingResponse = await fetch(`https://api.github.com/users/${username}/following`);
+    const followingData = await followingResponse.json();
+    const followingCount = followingData.length;
+    document.getElementById('followingCount').textContent = `Following: ${followingCount}`;
+    
+    document.getElementById('userDetails').style.display = 'block';
+    document.getElementById('error').style.display = 'none';
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('usernameGet').value = '';
+}
 
