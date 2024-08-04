@@ -770,3 +770,8 @@ for (const [key, value] of result) {
 input.addEventListener('input', function () {
     div.textContent = this.value;
 });
+----------------------------------------------
+const str = "john works from home and jane works from office";
+const result = str.match(/([a-z]+ works from [a-z]+)/ig);
+
+console.log( result );
