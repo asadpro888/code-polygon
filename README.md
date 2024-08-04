@@ -745,3 +745,11 @@ const offices = [
 
 const employees = offices.flatMap(office => office.employees).flat();
 console.log(employees)
+--------------------------------js project-------------
+let input = document.querySelector('#inp')
+let div = document.querySelector('.hh1');
+
+
+input.addEventListener('input', function () {
+    div.textContent = this.value;
+});
