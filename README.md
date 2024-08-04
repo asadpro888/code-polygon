@@ -727,3 +727,21 @@ fetch('https://reqres.in/api/users')
 const hour = 12;
 
 console.log(hour % 12 || 12);
+--------------flatMap------------
+const offices = [
+    {
+        name: 'west bank',
+        employees: ['john', 'sarah'],
+    },
+    {
+        name: 'east bank',
+        employees: ['ban', 'hope'],
+    },
+    {
+        name: 'north bank',
+        employees: ['johny', 'kenny'],
+    },
+];
+
+const employees = offices.flatMap(office => office.employees).flat();
+console.log(employees)
