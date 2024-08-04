@@ -749,6 +749,23 @@ console.log(employees)
 let input = document.querySelector('#inp')
 let div = document.querySelector('.hh1');
 
+------------------entries---------------
+const params = {
+    search: 'javascript tutorials',
+    page: 2,
+    limit: 10,
+    order: 'desc',
+    sort: 'relevance'
+};
+
+
+const result = Object.entries(params);
+
+
+for (const [key, value] of result) {
+    console.log(`${key}: ${value}`);
+}
+
 
 input.addEventListener('input', function () {
     div.textContent = this.value;
