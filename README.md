@@ -797,3 +797,31 @@ myButton.addEventListener('click', () => {
 let age = 21;
 
  let age >= 18 ? "you're an adult" : "you're a minor";
+ ----------------switch cases------------------
+ let day = 1;
+
+switch () {
+    case day === 1:
+        console.log('Today is Monday');
+        break;
+    case day === 2:
+        console.log('Today is Tuesday');
+        break;
+    case day === 3:
+        console.log('Today is Wednesday');
+        break;
+    case day === 4:
+        console.log('Today is Thursday');
+        break;
+    case day === 5:
+        console.log('Today is Friday');
+        break;
+    case day === 6:
+        console.log('Today is Saturday');
+        break;
+    case day === 7:
+        console.log('Today is Sunday');
+        break;
+    default:
+        console.log('Invalid day');
+}
