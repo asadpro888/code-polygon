@@ -793,4 +793,7 @@ myButton.addEventListener('click', () => {
   randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
   myLabel.textContent = `Random number: ${randomNum}`;
 });
+---------------ternary operator------------
+let age = 21;
 
+ let age >= 18 ? "you're an adult" : "you're a minor";
