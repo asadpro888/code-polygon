@@ -775,3 +775,10 @@ const str = "john works from home and jane works from office";
 const result = str.match(/([a-z]+ works from [a-z]+)/ig);
 
 console.log( result );
+---------------Math.random----------------
+const min = 50;
+const max = 100;
+
+
+let random = Math.floor(Math.random() * max) + min;
+console.log(random);
