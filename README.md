@@ -846,3 +846,8 @@ const users = JSON.parse(records);
 for(const u of users){
     console.log(u.username)
 }
+------------includes----------------------
+const numbers = [1, 4, 9, 16, 25, 36, 49, 64];
+
+
+console.log(numbers.includes(25, -5))
