@@ -834,4 +834,15 @@ const users = {
 
 const json = JSON.stringify(users, null, '\t');
 
-console.log(json)
+console.log(json);
+const records = `[
+{"id":1, "username": "dcode", "memberSince": 2017},
+  {"id":2, "username": "jdoe", "memberSince": 2019},
+  {"id":3, "username": "admin", "memberSince": 2015}
+]`;
+
+const users = JSON.parse(records);
+
+for(const u of users){
+    console.log(u.username)
+}
