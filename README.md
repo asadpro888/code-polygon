@@ -825,3 +825,13 @@ switch () {
     default:
         console.log('Invalid day');
 }
+-------------JSON----------------
+const users = {
+    id: 1,
+    username: "dcde",
+    memberSince: 2017,
+};
+
+const json = JSON.stringify(users, null, '\t');
+
+console.log(json)
