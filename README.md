@@ -858,3 +858,8 @@ const usernameAsArray = Array.from(username, character =>{
 });
 
 console.log(usernameAsArray)
+--------------with---------------------------
+const hobbies = ['tennis', 'reading', 'gym'];
+const newHobbies = hobbies.with(1, 'coding');
+console.log(hobbies)
+console.log(newHobbies)
