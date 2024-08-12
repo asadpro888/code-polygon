@@ -863,3 +863,24 @@ const hobbies = ['tennis', 'reading', 'gym'];
 const newHobbies = hobbies.with(1, 'coding');
 console.log(hobbies)
 console.log(newHobbies)
+----------------------flat---------------
+const keyValuePairs = [
+    ["username", "dcode"],
+    ['memberSince', '2017'],
+];
+
+console.log(keyValuePairs.flat())
+/3darray.flat()
+const array3d = [
+    1,
+    2,
+    [
+        3,
+        [
+            4,
+            5,
+        ]
+    ]
+];
+
+console.log(array3d.flat(2))
