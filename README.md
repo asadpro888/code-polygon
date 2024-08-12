@@ -884,3 +884,13 @@ const array3d = [
 ];
 
 console.log(array3d.flat(2))
+------------freeze--------
+let user = {
+    username: "dcode",
+    memberSince: "2017",
+}
+Object.freeze(user)
+user.memberSince = '2018';
+user.active = true;
+delete user.username
+console.log(user)
