@@ -894,3 +894,50 @@ user.memberSince = '2018';
 user.active = true;
 delete user.username
 console.log(user)
+---------failed weather app code-----
+const api = {
+    key: '0683eb0606334b98c7f51d904ff7e81f',
+    baseURL: 'https://api.openweathermap.org/data/3.0/',
+};
+
+const searchBox = document.querySelector('.search-box');
+
+searchBox.addEventListener('keypress', setQuery)
+
+function setQuery(e){
+    if(e.keyCode == 13){
+        getResults(searchBox.value)
+        console.log(searchBox.value);
+        
+    }
+}
+
+function getResults(query){
+    fetch(`${api.baseURL}.weather?q=${query}&units=metric&APPID=${api.key}`)
+    .then(weather =>{
+        return weather.json();
+    }).then(displayResults)
+}
+function displayResults(weather) {
+    console.log(weather);
+    let city = document.querySelector(".location .city")
+    city.innerHTML = `${weather.name}, ${weather.sys.country}`;
+
+    let now = new Date();
+    let date = document.querySelector('.location .date')
+    date.innerHTML = dateBuilder(now)
+}
+function dateBuilder(s){
+    let months = ['January', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let days = ['sunday', 'monday', 'thuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+
+    let day = days[s.geyDay()];
+    let date = s.getDate();
+    let month = months[s.getMonth]
+    let year = s.getFullYear();
+
+    return `${day} ${date} ${month} ${year}`;
+};
+
+
