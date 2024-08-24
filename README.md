@@ -1038,5 +1038,14 @@ function sum(arr){
     return sum;
 }
 sum([1, 3, 5,7]);
+-------reducer function------------
+const array = [1, 3, 5, 7, 5, 3, 9, 4, 7]
 
+function sum(arr){
+    const reducer = (total, value) => total + value;
+    const initialvalue = 0;
+    return arr.reduce(reducer, initialvalue);
+}
+
+sum(array)
 
