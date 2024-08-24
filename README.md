@@ -1026,5 +1026,17 @@ stack.pop()
 stack.pop()
 stack.pop()
 stack.pop()
+--------------function------------
+
+const array = [1, 3, 5, 7, 5, 3, 9, 4, 7]
+
+function sum(arr){
+    let sum = 0;
+    for(const val of arr){
+        sum += val;
+    }
+    return sum;
+}
+sum([1, 3, 5,7]);
 
 
