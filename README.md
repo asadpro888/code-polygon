@@ -1067,5 +1067,25 @@ dates
 const maxDate = dates.reduce((max,d) => d > max ? d : max, dates[0]);
 
 maxDate
+------------js debugging methods------
+const button = document.querySelector('.button')
+const inputs = document.querySelectorAll('.input')
+const result = document.querySelector('.result')
 
+const getUsername =()=>{
+    return inputs[0].value;
+};
+
+const getAge = () => {
+    return inputs[1].value;
+}
+
+
+button.addEventListener('click', ()=>{
+    // debugger;
+    const username = getUsername()
+    const age = getAge()
+
+    result.textContent = `${username} is ${age} years old`
+})
 
