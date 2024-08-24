@@ -1047,5 +1047,15 @@ function sum(arr){
     return arr.reduce(reducer, initialvalue);
 }
 
-sum(array)
+sum(array)/
+const array = [
+    {item: 'imac', price: 100}, 
+    {item: 'ipad', price: 500}
+]
+
+const sum = array.reduce((total, item) => total + item, 0)
+
+sum
+console.log(sum);
+
 
