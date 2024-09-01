@@ -1088,4 +1088,48 @@ button.addEventListener('click', ()=>{
 
     result.textContent = `${username} is ${age} years old`
 })
+------------map---------------------
+const numberArray = [2, 3, 4, 5, 35]
+const doubleArra = numberArray.map(numberArray =>{
+    return numberArray * 2
+})
+console.log(doubleArra);
+/////////////
+const makeDouble = numberItem => numberItem * 2
 
+const numberArray = [2, 3, 4, 5,35];
+const doubleArray = numberArray.map(makeDouble);
+
+
+const doubleArray2 = numberArray.map(n => n * 2);
+
+console.log(doubleArray);
+//////////////////////////////
+const myName = 'Asadprox'
+const nameArray = myName.split('');
+const newName = myName.split('').map(l => `${l}${l}`)
+
+console.log(newName);
+
+const joinedNewName = newName.join('')
+
+joinedNewName
+////////////////////////
+const count = true;
+
+let countValu = new Promise(function(resolve, reject){
+    if(count){
+        resolve('there is a count value');
+    }else{
+        reject('there is no count value')
+    }
+});
+console.log(countValu);
+---------------promise----------
+
+//////////////////
+let promise = new Promise(function(resolve, reject){
+    setTimeout(() => resolve('done'), 5000)
+})
+
+promise.then((success)=> console.log(success))
