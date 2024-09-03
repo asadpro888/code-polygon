@@ -1171,6 +1171,7 @@ try{
     console.log(err.name);
     console.log(err.message);
     console.log('catch block will caught it');
-    
+}finally{
+    console.log('this is finally block');
     
 }
