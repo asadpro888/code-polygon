@@ -1161,4 +1161,16 @@ function App() {
 }
 
 export default App
+-----error handling--------------
 
+try{
+    console.log(asad);
+    console.log('try block will throw you error');
+    
+}catch(err){
+    console.log(err.name);
+    console.log(err.message);
+    console.log('catch block will caught it');
+    
+    
+}
