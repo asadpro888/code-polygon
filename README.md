@@ -1175,3 +1175,38 @@ try{
     console.log('this is finally block');
     
 }
+-------------------stopwatch project-------------
+import React, { useEffect, useState } from 'react'
+import './App.css'
+ const App = () => {
+  const [time, setTime] = useState(0)
+  const [running, setRunning] = useState(false)
+
+  useEffect(()=> {
+    let interval;
+    if(running){
+      interval = setInterval(() => {
+        setTime((prevTime) => prevTime + 10)
+      }, 10)
+    }else if(!running){
+      clearInterval(interval)
+    }
+    return () => clearInterval(interval)
+  }, [running])
+  return (
+    <>
+      <h1>01-StopWatch</h1>
+      <div>
+        <span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}</span>
+        <span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+        <span>{('0' + Math.floor((time / 10) % 60)).slice(-2)}</span>
+      </div>
+      <div>
+        <button onClick={()=>{setRunning(true)}}>Start</button>
+        <button onClick={()=>{setRunning(false)}}>Stop</button>
+        <button onClick={()=>{setRunning(0)}}>Reset</button>
+      </div>
+    </>
+  )
+}
+export default App
