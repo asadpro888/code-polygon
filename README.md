@@ -1209,4 +1209,17 @@ import './App.css'
     </>
   )
 }
-export default App
+export default App;
+---------------JSON---------------
+{
+    "key": "value",
+    "favoritenumber": 3,
+    "isprogrammer": true,
+    "hobbies": ["Weigth lifting", "Bowling"],
+    "friends": [{
+        "name": "Joey",
+        "Surname": "Adamson",
+        "typeofGame": true
+    }]
+
+}
