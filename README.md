@@ -1239,3 +1239,8 @@ do{
     console.log(i);
 
 }while(i < 10)
+-----charAt method---------
+let myVar = 'Matmatics';
+
+console.log(myVar.charAt(7));
+/this methos defines a number of string which is located
