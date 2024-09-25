@@ -1262,3 +1262,16 @@ const parent =() =>{
 }
 
 parent()
+---------------------------------------
+const arr = [23,45,64,78,96,34]
+console.log(met1(arr))
+
+function met1(arr){
+    let sum = 0;
+    let i = 0;
+    while(i < arr.length){
+        sum += arr [i]
+        i++
+    }
+    return sum;
+}
