@@ -1244,3 +1244,21 @@ let myVar = 'Matmatics';
 
 console.log(myVar.charAt(7));
 /this methos defines a number of string which is located
+--------nested functions in js-----------------
+let x = 1
+
+const parent =() =>{
+    let myValue = 2;
+    console.log(x)
+    console.log(myValue)
+
+    const child = () => {
+        console.log(x += 5)
+        console.log(myValue += 1)
+
+    }
+
+    child()
+}
+
+parent()
