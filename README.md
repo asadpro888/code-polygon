@@ -1275,3 +1275,6 @@ function met1(arr){
     }
     return sum;
 }
+--------------annotating in typescript------------
+let me: number = 2;
+let python: string = 'programming language';
