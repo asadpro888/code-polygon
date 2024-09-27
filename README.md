@@ -1278,3 +1278,16 @@ function met1(arr){
 --------------annotating in typescript------------
 let me: number = 2;
 let python: string = 'programming language';
+-------------any type------------------------
+let tech = 'Typescript';
+
+console.log( typeof tech);
+
+tech = 'javascript';
+
+let isHard: boolean = true;
+let matter: any = 'ggggg';
+
+matter = 3;
+matter = null;
+matter = false;
