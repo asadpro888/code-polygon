@@ -1291,3 +1291,6 @@ let matter: any = 'ggggg';
 matter = 3;
 matter = null;
 matter = false;
+-------------------------------------------
+let numbers: number[] = [1,2,3,4,5,6]
+
