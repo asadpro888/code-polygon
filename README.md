@@ -1293,4 +1293,11 @@ matter = null;
 matter = false;
 -------------------------------------------
 let numbers: number[] = [1,2,3,4,5,6]
-
+--------------Objects in Typescript--------
+function print(): {name:string, age:number, loc:string}{
+    return{
+        name: 'asadprox',
+        age: 16,
+        loc: 'Uzb'
+    }
+}
