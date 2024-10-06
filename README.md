@@ -1301,3 +1301,6 @@ function print(): {name:string, age:number, loc:string}{
         loc: 'Uzb'
     }
 }
+-----------getting a date in react-------------
+      <article>{date.getDate()}</article>
+
