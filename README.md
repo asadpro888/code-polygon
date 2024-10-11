@@ -1304,3 +1304,26 @@ function print(): {name:string, age:number, loc:string}{
 -----------getting a date in react-------------
       <article>{date.getDate()}</article>
 
+const ValidPassword = () => <h1>valid ValidPasswrd</h1>
+const InvalidPassword = () => <h1>invalid ValidPasswrd</h1>
+
+
+const Password = ({ isValid }) => {
+  // if(isValid){
+  //   return <ValidPassword/>
+  // }
+  // return <InvalidPassword/>
+
+  return isvalid ? <ValidPassword/> : <InvalidPassword/>
+}
+
+
+const App = () => {
+  return (
+    <div>
+      <Password isValid={false}/>
+    </div>
+  )
+}
+
+export default App
