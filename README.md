@@ -1327,3 +1327,28 @@ const App = () => {
 }
 
 export default App
+------------------------------------
+const Cart = () => {
+  const items: string[] = ['Wireless Earbuds', 'New SSD', 'Hoddie', 'Laptop'];
+
+
+
+  return(
+    <div>
+    <h1>Cart</h1>
+      {items.length > 0 && <h2>You have {items.length} items in your cart</h2>}
+    </div>
+
+  )
+}
+
+
+const App = () => {
+  return (
+    <div>
+      <Cart/>
+    </div>
+  )
+}
+
+export default App
