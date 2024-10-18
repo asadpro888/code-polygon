@@ -1352,3 +1352,61 @@ const App = () => {
 }
 
 export default App
+// let baseSalary = 30_000;
+// let overtime = 10;
+// let rate = 20;
+
+// function getWage(baseSalary, overtime, rate){
+//     return baseSalary + (overtime * rate);
+// }
+
+// let employee = {
+//     baseSalary: 30_000,
+//     overtime: 10,
+//     rate: 20,
+//     getWage: function(){
+//         return this.baseSalary + (overtime * rate);
+//     }
+// }
+
+// employee.getWage();
+
+// -------------------------------------
+
+// function createCircle(radius){
+//     return {
+//         radius,
+//         draw: function(){
+//             console.log('draw')
+//         }
+//     }
+// }
+
+// const circle = createCircle(1)
+
+
+
+// function Circle(radius){
+//     console.log('this', this);
+//     this.radius = radius;
+//     this.draw = function(){
+//         console.log('draw')
+//     }
+// }
+// const another = new Circle(1)
+
+
+// class Pent{
+//     constructor(){
+//         radiusY = 20;
+//         radiusX = 20;
+//         Space = {
+//             x = 30,
+//             y = 30,
+//         }
+//     }
+// }
+// const other  = new Pent();
+
+new Number();
+new String()
