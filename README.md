@@ -1418,3 +1418,31 @@ const filtered = number.filter(function(value){
 })
 
 console.log(filtered)
+
+----------------ts seris-------------
+'use strict'
+
+console.log('typescript')
+interface someValue{
+    name: string,
+    id: number
+}
+
+let obj: someValue ={
+    name: 'ffff',
+    id: 234,
+}
+console.log(obj)
+
+let awesome:string = 'ddhdhdhdhdhd'
+awesome = 'something'
+awesome = awesome.toUpperCase()
+console.log(awesome)
+
+let amount:number = 20;
+amount = 12 - 3;
+
+let aws:boolean = false;
+
+aws = true;
+
