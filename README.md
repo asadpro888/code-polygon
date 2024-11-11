@@ -1454,3 +1454,11 @@ age = age = 5
 let isAdult: boolean = age >= 18;
 isAdult = !isAdult;
 console.log(isAdult)
+let tax:number | string | boolean = true;
+tax = false;
+tax = '$10'
+
+
+let requestStatus: 'pending' | 'succes' | 'error' = 'pending';
+
+requestStatus = 'error'
