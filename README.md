@@ -1462,3 +1462,14 @@ tax = '$10'
 let requestStatus: 'pending' | 'succes' | 'error' = 'pending';
 
 requestStatus = 'error'
+let books = ['1994', 'Brave new worls', 'fehrenheit 451'];
+
+let foundBook:string | undefined;
+
+for(let book of books){
+    if(book === '1994'){
+        foundBook = book;
+        break;
+    }
+}
+
