@@ -1445,4 +1445,12 @@ amount = 12 - 3;
 let aws:boolean = false;
 
 aws = true;
+let greeting:string = 'hello';
+greeting = greeting.toUpperCase();
 
+let age:number = 45;
+age = age = 5
+
+let isAdult: boolean = age >= 18;
+isAdult = !isAdult;
+console.log(isAdult)
