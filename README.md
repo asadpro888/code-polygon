@@ -1472,4 +1472,33 @@ for(let book of books){
         break;
     }
 }
+-----------failed fetchdata----------------
 
+const App = () => {
+  const url = 'https://www.course-api.com/react-tours-project'
+
+  async function fetchData(url:string){
+    try{
+      const response = await fetch(url)
+      if(!response.ok){
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const data = await response.json()
+      console.log(data)
+      return data
+    }catch (error){
+      const erroMsg = error instanceof Error? error.message: 'there was an error...'
+      console.log(erroMsg);
+      return [];
+    }
+  }
+ const tour = await fetchData(url)
+ tour.map((t:any)=> {
+  console.log(tour.name)
+ })
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
