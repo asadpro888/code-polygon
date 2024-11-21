@@ -1527,3 +1527,36 @@ const App = () => {
 }
 
 export default App
+import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [todos, setTodos] = useState([])
+  const [inputValue, setInputValue] = useState('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if(inputValue.trim()){
+      setTodos([...todos, inputValue]);
+      setInputValue('')
+    }
+  }
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
+  }
+  return (
+    <div>
+      <h1>Todo list</h1>
+      <form onSubmit={handleSubmit}>
+        <input type="text" onChange={handleChange} value={inputValue} placeholder='Add todo'/>
+        <button type='submit'>add todo</button>
+      </form>
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index}>{todo}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default App
