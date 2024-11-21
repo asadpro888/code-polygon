@@ -1502,3 +1502,28 @@ const App = () => {
 }
 
 export default App
+---------useState challenge----------
+import React from 'react'
+import { useState, useEffect } from 'react'
+const App = () => {
+  const [name, setName] = useState(() =>{
+    const saveName = localStorage.getItem('name')
+    return saveName ? JSON.parse(saveName) : '';
+  })
+  useEffect(() => {
+    localStorage.setItem('name', JSON.stringify(name))
+  }, [name])
+  const handleChange = (event) => {
+    setName(event.target.value)
+  }
+  const handleClear = () => setName('')
+  return (
+    <div>
+      <h1>your name : {name}</h1>
+      <input type="text" value={name} onChange={handleChange} placeholder='enter your name'/>
+      <button onClick={handleClear}>Clear</button>
+    </div>
+  )
+}
+
+export default App
