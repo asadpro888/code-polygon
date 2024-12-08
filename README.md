@@ -1560,3 +1560,8 @@ const App = () => {
 }
 
 export default App
+let age = 15
+let name = age > 10 ? 'asad'
+
+
+
