@@ -1562,6 +1562,13 @@ const App = () => {
 export default App
 let age = 15
 let name = age > 10 ? 'asad'
+let names = ['pedro', 'jessica', 'carol', 'pedro', 'pedro'];
+
+names.filter((name)=> {
+    return name !== 'pedro'
+    console.log(names)
+})
+
 
 
 
