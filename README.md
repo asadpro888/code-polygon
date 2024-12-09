@@ -1569,6 +1569,11 @@ names.filter((name)=> {
     console.log(names)
 })
 
+const number = [1, -2, 4, 5]
+const sum = number.reduce((accumulator, currentvalue)=>{
+    return accumulator + currentvalue
+})
+console.log(sum)
 
 
 
