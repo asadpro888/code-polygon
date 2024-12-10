@@ -1574,6 +1574,14 @@ const sum = number.reduce((accumulator, currentvalue)=>{
     return accumulator + currentvalue
 })
 console.log(sum)
-
+let money = '50.67';
+// money = parseInt(money)
+// money = +money
+// money = Number(money)
+// money = money.toString()
+// money = String(money)
+money = parseFloat(money)
+console.log(money)
+console.log( typeof money)
 
 
