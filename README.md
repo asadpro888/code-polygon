@@ -1583,5 +1583,31 @@ let money = '50.67';
 money = parseFloat(money)
 console.log(money)
 console.log( typeof money)
+import React from 'react'
+import {useState} from 'react'
+const App = () => {
+  const[count, setCount] = useState(1)
+  const [names, setNames] = useState([
+    'jphn',
+    'joe',
+    'asad'
+  ])
+  const[input, setInput] = useState("")
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={()=> setCount(count + 1)}>+</button>
+      <ul>
+        {names.map((name)=>(
+          <li key={Math.random() * 2}>{name}</li>
+        ))}
+      </ul>
+      <input type='text' value={input} onChange={(e)=> setInput(e.target.value)}/>
+      <button onClick={()=> setInput(e.push(name))}>add</button>
+    </div>
+  )
+}
+
+export default App
 
 
