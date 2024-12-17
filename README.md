@@ -1610,4 +1610,21 @@ const App = () => {
 
 export default App
 
+import React from 'react'
+import { useState, useEffect} from 'react'
+const App = () => {
+  const[screen, setScreen] = useState(window.innerWidth)
+  useEffect(()=> {
+    window.addEventListener('resize', () => {
+      setScreen(window.innerWidth)
+    })
+    
+  }, [screen])
+  return (
+    <div>
+      <section>{screen}</section>
+    </div>
+  )
+}
 
+export default App
