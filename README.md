@@ -1628,3 +1628,647 @@ const App = () => {
 }
 
 export default App
+let name = '            asad             ';
+// let surname = 'ismoilov';
+// let fullname = name.concat(surname)
+// console.log(fullname)
+// name += 'something else'
+// console.log(name.length)
+// console.log(name.toUpperCase())
+// console.log(name.slice(1, 2))
+// console.log(name.split('').join('-'))
+    // console.log(name.includes('f'))
+// console.log(name.trim())
+// let plus = 9;
+// let inus = 9
+// let backtic = `${plus} + ${inus}`
+// console.log(backtic)
+// let fullname = 'robert';
+// let lastname = 'rattinson'
+// let overall = fullname + '' + lastname;
+// console.log(overall.toLocaleUpperCase())
+// let favactor = `my favorite actor is ${overall}`
+// console.log(favactor)
+// let money  = 50.9;
+// money = +money
+// money = parseInt(money)
+// money = Number(money)
+// console.log(money)
+// console.log( typeof money)
+// money = parseFloat(money)
+// console.log(money)
+// let a = 20
+// let b = 20
+// if(a > b){
+//     console.log('a is greater then b')
+// }else if (a < b){
+//     console.log('a is less then b')
+// }else{
+//     console.log('first')
+// }
+// let time = 30;
+// let greeting;
+// if(time < 10){
+//     greeting = 'good morning'
+//     console.log(greeting)
+// }else if(time < 20){
+//     greeting = 'good day'
+//     console.log(greeting)
+// }else{
+//     greeting = 'good evening'
+//     console.log(greeting)
+// }
+// let password = 9;
+// if(password <= 8){
+//     console.log('welcome')
+// }else if(password >= 8){
+//     console.log('password is too short')
+// }
+// else if(password <= 8){
+//     console.log('password should be 8 characters')
+// }else{
+//     console.log('please provide password')
+// }
+// let day = 'friday';
+// switch(day){
+//     case 'monday':
+//         console.log('today is monday')
+//         break;
+//     case 'thuesday':
+//         console.log('today is tuesday')
+//         break;
+//     case 'sunday':
+//         console.log('today is sunday')
+//         break;
+//     case 'saturday':
+//         console.log('today is saturday')
+//         break;
+//     default:
+//         console.log('dont know what is today')                
+// }
+// let fruit = 'kiwi'
+//  switch(fruit){
+//     case 'orange':
+//         console.log('i am not fan of orange')
+//         break;
+//     case 'apple':
+//         console.log('how you like them apples')
+//         break;       
+//      default:
+//         console.log('i never heard of that fruit')   
+//  }
+// function Loop(){
+//     for (let i = 0; i < 100; i++){
+//         console.log('asad', i)
+//     }
+// }
+// Loop()
+// for(let i = 1; i < 1000; i++){
+//     console.log('asad', i)
+// }
+// let i = 0;
+// while(i <= 5){
+//     console.log('hello world')
+//     i++;
+// }
+// let i = 10;
+// while(i <= 100){
+// console.log('asadprox', i)
+// i++
+// }
+// let i = 1;
+// do{
+//     console.log('hello world')
+//     i++;
+// }while(i <= 5);
+// let i = 20;
+// do{
+//     console.log('asad', i)
+//     i++
+// }while(i <= 400)
+// let i = 2
+// while(i < 100){
+//     console.log('asadprox888', i)
+//     i++
+// }
+// const a = true;
+// const b = false;
+// const c = 3;
+// console.log(a > 2 && c < 2)
+// console.log(a || b)
+// console.log(b || b)
+// console.log(!a)
+// console.log(!b)
+// let password = 'asadpox'
+// if(password.length >= 8 || password.includes('pro')){
+//     console.log('valid password')
+// }else{
+//     console.log('invalid password')
+// }
+// const myList = ['sum', 'some', 'beach', 'witch']
+// console.log(myList)
+// let num = [1,2,3,44,5,5,6,6,65,3,3,23,32,3]
+// console.log(num)
+// console.clear()
+// const nested = [1, 2, 2,34,5,5 ['one', 'two'], 2,45,]
+// console.log(nested[5])
+// const letter = ['s', 'd', 't']
+// const favSinger = ['alanwalker', 'john doe', 'rose']
+// console.log(favSinger[0])
+// const fruits = ['apples',
+//     'banana',
+//     'grape',
+//     'strawberry'
+// ]
+// fruits.push('berry') add
+// fruits.pop() remove
+// fruits.shift() remove
+// fruits.unshift('berry') add
+// const fruits = ['apples', 'pomefranates', 'mongo']
+// const moreFruits = ['strawberry', 'pineapple', 'grapefruite']
+// const tatal = fruits.concat(moreFruits)
+// console.log(tatal)
+// const pl = ['javascript', 'golang', 'python', 'php']
+// const numbers = [1,2,34,54,3,3,3,33]
+// console.log(pl.includes('java'))
+// console.log(pl.join('|'))
+// console.log(pl.reverse())
+// console.log(pl.slice(1, 3))
+// console.log(numbers)
+// console.log(numbers.sort())
+// const person = {
+//     name: 'asad',
+//     lastName: 'ismoilov',
+//     age: 16,
+//     planet: 'earth',
+//     isprogrammer: true,
+// }
+// delete person.age
+// console.log(person.lastName)
+// console.log(person.age)
+// console.log(person.isprogrammer)
+// console.log(person.name)
+// const Toyota = {
+//     type: 'B',
+//     model: 'S class',
+//     color: 'red',
+// }
+// console.log(typeof Toyota)
+// car.wheels = 4;
+// console.log(car)
+// function greet( x, y){
+// return x + y;
+
+// }
+
+// const res = greet(5, 9)
+// console.log(res)
+// function myFunc(p1, p2){
+//     return p1 * p2
+// }
+// let x = myFunc(3, 8);
+// console.log(x)
+// function show(fn){
+//     const value = 10;
+//     fn(value)
+// }
+// show(function(value){
+//     console.log(value)
+// })
+// function greet(name, cb){
+//     console.log(`hello ${name}`)
+//     cb()
+// }
+// function cb(){
+//     console.log('i am callback')
+// }
+// greet('John', cb)
+// function showCallFunction(fn){
+//     const val = 10;
+//     fn(val)
+// }
+// function fn(){
+//     console.log(val)
+// }
+// let textMes = 'hey'
+// console.log(textMes)
+// function showMes(){
+//     let textMessage = 'hello';
+//     console.log(textMessage)
+// }
+// showMes()
+// for(let i = 0; i < 5; i++){
+//     console.log(i)
+// }
+// console.log(i)
+// let phones = ['Appwrite', false, 'Samsung', 'Nokia', 'OPPO', ]
+// phone.find((item, index, array)=> item.id == 3)
+// console.log()
+// console.log(phones.includes('Sumsung'))
+// phones.forEach((item, index, array)=> console.log(item, index))
+// let evanMorePhones = ['iphone 12', 'iphone 33']
+// let CombineThem = phones.concat(evanMorePhones)
+// console.log(CombineThem)
+// console.log(phones.splice('Techno'))
+// let Copy = phones.slice(1, 3)
+// console.log(Copy)
+// phones.unshift('Techno')
+// phones.shift()
+// phones.push('fuck')
+// phones.pop()
+// for(let phone of phones){
+    // console.log(phone)
+// }
+// let nums = [1,2,3]
+// let digits = nums
+// console.log(nums === digits)
+// function Read(){
+//     return `hello my name is ${person.name} & i am ${person.age} years old`
+// }
+// const person ={
+//     name: 'John',
+//     age: 12,
+//     Read,
+// }
+// console.log(person.Read())
+// const person = {
+//     name: 'asad',
+//     age: 16,
+//     greet: function(){
+//         return `hello my name is ${person.name} & i am ${person.age}years old`
+//     }
+// }
+// console.log(person.greet())
+// const person = {
+//     name: 'John Doe',
+//     age: 23,
+//     email: 'johnDoe234@gmail.com',
+//     isSubscribed: true,
+//     hobbies: ["Reading", "Running", "Cooking"],
+//     address: {
+//     city: "New York",
+//         idk: true
+//     },
+// }
+// const jsonStringify = JSON.stringify(person)
+// const parsed = JSON.parse(jsonStringify)
+// console.log(parsed)
+// const currentDate = new Date(2024, 2, 24, 12, 20, 0, 0);
+// console.log(currentDate)
+// const date = new Date()
+// const year = date.getFullYear()
+// const month = new getMonth()
+// const day = new getDay()
+// console.log(`year ${year}`)
+// console.log(`moth ${month}`)
+// console.log(`day ${day}`)
+// date.setDate(date.getDate() + 1)
+// console.log(date.toDateString())
+// console.log(date.toISOString())
+// console.log(date)
+// console.log(date.toLocaleDateString())
+// setInterval(()=> console.log('this func will be executed in every 2 second'),
+// 2000
+// )
+// setTimeout(function (){
+//     console.log(`this  func tion will be exucuted after 3 seconds`)
+// }, 3000)
+// const intervalId = setInterval(function(){
+//     console.log(`this is being executing in the interval`)
+// },1000)
+// console.log(intervalId)
+// setTimeout(function(){
+//     clearInterval(intervalId)
+//     console.log(`interval stopping`)
+// },10000)
+// console.log('gggjjjjjjjjjjj\
+//     hhhhhhhhhhhhhhh')
+// console.log(`${['hh', 'hggg', 'hgg', 'jbg']}`)
+// console.log(`
+//     the quick
+//     brown fox
+//     jumps over
+//     the lazy dog
+//     `)
+//     let name = 'asad'
+//     let lastName = 'ismoilov'
+//     console.log(`${name} my surname is ${lastName}`)
+// const greet = (username) => `hello ${username}`
+// console.log(greet('asad'))
+// const double = (number)=> number * 2
+// console.log(double(100))
+// setTimeout(()=>{
+//     console.log('hello')
+//     setTimeout( () => {
+//         console.log('hey')
+//         setTimeout( ()=> {
+//             console.log('namaste')
+//             setInterval(()=> {
+//                 console.log('hi')
+//                 setTimeout(()=> {
+//                     console.log('bonjour')
+//                 },2000)
+//             },2000)
+//         }, 2000)
+//     }, 2000)
+// },2000)
+// function user(name, age, work){
+//     return{
+//         name,
+//         age,
+//         work,
+//         intro:() =>{
+//             console.log(`my anem is ${name} i am ${age} years old i am ${work}`)
+//         }
+//     }
+// }
+// const asad = user('asad', 16, 'programmer')
+// const alex = ('alex', 34, 'designer')
+// console.log(asad.intro())
+// const lib = {
+//     sum: (a, b)=> {
+//         return a + b
+//     },
+//     mult: (a, b)=> {
+//         return a * b
+//     },
+// }
+// console.log(lib.sum(2,4))
+// console.log(lib.mult(2,4))
+// const gertPersionES5 = (name, age, height) => {
+//     return{
+//         name,
+//         age,
+//         height,
+//     }
+// }
+// const res = gertPersionES5('asad', 16, 1.82)
+// console.log(res)
+// function name(name = true){
+//     if(name === true){
+//         for(let i = 0; i <= 5; i++){
+//             console.log(`${i}`)
+//         }
+//     }
+// }
+// name()
+// function rating(rate){
+//     if(rate === 5){
+//         console.log(`hih ratings :)`)
+//     }else if(rate === 0){
+//         console.log('low Ratings :(')
+//     }
+// }
+// rating(0)
+// function multiply(a,b = 1){
+//     return a * b
+// }
+// console.log(multiply(4)) 
+// function giveMe4(a,b,c,d){
+//     console.log('a', a)
+//     console.log('b', b)
+//     console.log('c', c)
+//     console.log('d', d)
+// }
+// const colors = ['red', 'green', 'blue', 'teal']
+// giveMe4(...colors)
+// const strnums = ['one', 'two', 'three']
+// const other = ['four', 'five', 'six']
+// const concat = [...strnums, ...other]
+// console.log(concat)
+// let peoples = ['asad', 'alex', 'jordan']
+// console.log(['kumar' ...peoples])
+// 
+// let person = {
+//     name: 'asad',
+//     age: 16,
+//     gender: 'male'
+// }
+// const clone = {...person, work: 'Programmer', location: 'idk'}
+// console.log(clone)
+// let arr = [1,2,3];
+// let arr2 = [4,5];
+// let arr3 = [...arr, ...arr2]
+// console.log(arr3)
+// const user = {
+//     name: 'jen',
+//     age: 22,
+// }
+// const data = {...user, location: 'Termiz'}
+// console.log(data)
+// function user(x, ...userDate){
+//     console.log(x)
+//     console.log(userDate)
+// }
+// user('asad',15, 'programming')
+// function person(name, lastname, ...hobbies){
+//     console.log(name)
+//     console.log(lastname)
+//     console.log(hobbies)
+// }
+// person('asad', 'ismoilov', 'politics', 'geoghraphy')
+// function variadic(...params){
+//     console.log(params)
+// }
+// console.log('asad', 'ismoilov', 'go')
+// const foo = ['one', 'two', 'three']
+// const [one, two, three] = foo
+// console.log(one)
+// console.log(two)
+// console.log(three)
+// const [red, yellow, green, blue] = foo;
+// console.log(green)
+// let a,b 
+// [a = 5, b = 8] = [1, 'two']
+// console.log(b)
+// function f(){
+//     return [1, 2]
+// }
+// let a,b 
+// [a, b] = f()
+// console.log(a)
+// console.log(b)
+// function f(){
+//     return [1,2,3]
+// }
+// const [a, , b] = f()
+// console.log(a)
+// console.log(b)
+// const [a, ...b] = ['one', 'two', 'three']
+// console.log(b)
+// const colors = ['red', 'green', 'blue', 'yellow', 'orange']
+// const [a, ...b] = colors
+// console.log(b)
+// const student = {name: 'asad', position: 'first', rollNumber: 23}
+// const {name, position, rollNumber} = student;
+// console.log(name)
+// console.log(position)
+// console.log(rollNumber)
+// const person = {
+//     name: 'asadpro888',
+//     age: 16,
+//     gender: 'male',
+//     country: 'USA'
+// }
+// const {name, age, gender, country}  = person
+// console.log(country)
+// console.log(gender)
+// console.log(name)
+// console.log(age)
+// const num = {x: 100, y: 200}
+// console.log(x: new1, y: new2) = num
+// console.log(new1)
+// console.log(new2)
+// let {a, b, ...rest} = {a: 100, b: 200, c: 300, d:400}
+// console.log(a)
+// console.log(b)
+// console.log(rest)
+// let name = 'asadprox8888'
+// console.log(name.trim(''))
+// class Track {
+//     constructor(parama){
+//         this.name = parama.name;
+//         this.url = parama.url;
+//     }
+//     playTrack(){
+//         console.log(`we started playing ${this.name}`)
+//     }
+// }
+// class YoutubeTrack extends Track{
+//     constructor(params){
+//         super(params);
+//         console.log('constructor youtube', params)
+//         this.image = params.image
+//     }
+//     playTrack(){
+//         console.log('hello youtube')
+//     }
+// }
+// const track01 = new Track({
+//     name: 'track01',
+//     url: 'track01.mp3'
+// })
+// const track02 = new Track({
+//     name: 'track02',
+//     url: 'track02.mp3'
+// })
+// console.log(track01.name, 'track01')
+// console.log(track02.name, 'track02')
+// track01.playTrack()
+// track02.playTrack()
+// const youtubeTrack01 = new YoutubeTrack({
+//     name: 'youtubetrack01',
+//     url: 'youtubetrack01.mp3',
+//     image: 'youtubetrack01.jpg'
+// })
+// const youtubeTrack02 = new YoutubeTrack({
+//     name: 'youtubetrack02',
+//     url: 'youtubetrack02.mp3',
+//     image: 'youtubetrack02.jpg'
+// })
+// console.log(youtubeTrack01.playTrack)
+// console.log(youtubeTrack02.playTrack)
+// const Track = function(params){
+//     console.log(params)
+//     this.name = params.name;
+//     this.url = params.url;
+//     this.playTrack = function(){
+//         console.log(`we started playing ${params.name}`)
+//     }
+// }
+// const track01 = new Track({
+//     name: 'track01',
+//     url:'track01.mp3'
+// })
+// const track02 = new Track({
+//     name: 'track02',
+//     url:'track02.mp3'
+// })
+// track01.playTrack()
+// track02.playTrack()
+// ---------------------------------------
+// console.log(getLanguages)
+// function getLanguages(){
+//     return ['javascript', 'python']
+// }
+// const person  = {
+//     name: 'asadprox888',
+//     age: 16,
+//     country: 'USA'
+// }
+// function printPersonInfo({name, age, country}){
+//     console.log(`Name: ${name}`)
+//     console.log(`Age: ${age}`)
+//     console.log(`Country: ${country}`)
+// }
+// printPersonInfo(person)
+// let optioans = {
+//     title: 'my menu',
+//     items: ['item', 'item2']
+// }
+// function showMenu({title, width: w = 100, height: h = 200, items: [item, item2]}){
+//     console.log(`${title} ${w} ${h}`)
+//     console.log(item)
+//     console.log(item2)
+// }
+// showMenu(optioans)
+// const songs = [
+//     {name: 'Houdini', singer: 'Eminem', duration: 4.34},
+//     {name: 'I was nver there', singer: 'Weeknd', duration: 3.34},
+//     {name: 'old town road', singer: 'Lil Nas X', duration: 2.34},
+//     {name: 'Legit', singer: 'weeknd', duration: 4.24},
+//     {name: 'Wake up', singer: 'Moondiety', duration: 1.34},
+//     {name: 'Neon Blade', singer: 'Moondeity', duration: 2.34},
+// ]
+// const [, , , {singer: s}] = songs;
+// console.log(singer)
+const data = {
+    user: {
+        id: 123,
+        name: 'asadprox',
+        age: 16,
+        email: 'asilbekismoilov220@gmail.com',
+        address: {
+            city: 'New York',
+            country: 'USA',
+        },
+        hobbies: ['Reading', 'Painting', 'Cooking'],
+        scores: {
+            math: 95,
+            science: 88,
+            history: 75,
+        },
+    },
+    products: [
+        {id: 1, name: 'Laptop', price: 1000},
+        {id: 2, name: 'Phone', price: 800},
+        {id: 3, name: 'Tablet', price: 500},
+    ],
+    settings: {
+        darkMode: true,
+        notifications: {
+            email: true,
+            sms: false,
+            push: true
+        },
+        language: 'English'
+    },
+};
+const {
+    user: {
+        name, age, address: {city, country},
+        hobbies,
+        scores: {math, science, history},
+        email,
+    },
+    products: [product1, product2, product3],
+    settings: {
+        darkMode,
+        notifications: {
+            email: emailNotification,
+            sms: smsNotification,
+            push: pushNotification,
+        },
+        language,
+    },
+}= data
